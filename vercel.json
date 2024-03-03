@@ -3,7 +3,7 @@
     "rewrites": [
         { 
             "source": "/api/leads",
-            "destination": "https://yfn0f6kvu9.execute-api.us-east-2.amazonaws.com"
+            "destination": "https://yfn0f6kvu9.execute-api.us-east-2.amazonaws.com/api/leads"
         }
     ]
 }

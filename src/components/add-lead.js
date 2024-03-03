@@ -3,7 +3,6 @@ import React from 'react'
 
 const AddLead = (cb) => {
     const handleClick = async (e) => {
-        console.log(e)
         await fetch('/api/leads', {
           method: "POST",
           headers: {
