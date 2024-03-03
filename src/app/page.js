@@ -3,29 +3,29 @@
 
 import AddLead from "@/components/add-lead";
 
-// async function fetchData() {
-//   const response = await fetch('/api/leads')
-//   const result = await response.json()
-//   const {results} = result
-//   return results;
-//   // setLeads(await response.json())
-// }
+async function fetchData() {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/leads`)
+  const result = await response.json()
+  const {results} = result
+  return results;
+  // setLeads(await response.json())
+}
 
 export default async function Home() {
   // const [data, setData] = useState('')
   // const [leads, setLeads] = useState('')
 
-  // const leads = await fetchData()
+  const leads = await fetchData()
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1>Hello Eric</h1>
       <AddLead />
-      {/* <div>
+      <div>
         {leads && leads.map((lead, i) => {
           return <div key={i}>{lead.email}</div>
         })}
-      </div> */}
+      </div>
     </main>
   );
 }
