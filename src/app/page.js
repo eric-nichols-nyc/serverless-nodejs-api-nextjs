@@ -4,7 +4,7 @@
 import AddLead from "@/components/add-lead";
 
 async function fetchData() {
-  const response = await fetch('http://localhost:3000/api/leads')
+  const response = await fetch('/api/leads')
   const result = await response.json()
   const {results} = result
   return results;
