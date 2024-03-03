@@ -19,7 +19,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Hello World v2</h1>
+      <h1>Hello Eric</h1>
       <AddLead />
       <div>
         {leads && leads.map((lead, i) => {
