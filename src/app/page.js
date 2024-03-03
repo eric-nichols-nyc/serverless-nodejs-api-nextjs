@@ -15,7 +15,7 @@ export default async function Home() {
   // const [data, setData] = useState('')
   // const [leads, setLeads] = useState('')
 
-  c// onst leads = await fetchData()
+  // const leads = await fetchData()
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
